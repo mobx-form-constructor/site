@@ -1,5 +1,6 @@
 import { createGlobalStyle, css } from 'styled-components'
-import prismCss from '!!raw-loader!prismjs/themes/prism-okaidia.css'
+
+const prismCss = require('!!raw-loader!prismjs/themes/prism-okaidia.css')
 
 const GlobalStyle = createGlobalStyle`
 html,
@@ -127,10 +128,6 @@ button:focus {
         padding: 20px;
         display: block;
         font-size: 12px;
-    }
-
-    .react-json-view{
-        line-height: 1.5;
     }
 `
 
