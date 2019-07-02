@@ -44,7 +44,8 @@ function SimpleForm() {
 
             <Block>
                 <a
-                    href="https://github.com/mobx-form-constructor/site/src/pages/Layout/Examples/SimpleForm/index.tsx"
+                    // tslint:disable-next-line:max-line-length
+                    href="https://github.com/mobx-form-constructor/site/blob/master/src/pages/Layout/Examples/Simple/SimpleForm/index.tsx"
                     target="_blank"
                 >
                     Link to github with source
