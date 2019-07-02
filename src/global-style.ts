@@ -111,7 +111,7 @@ button:focus {
     outline: none;
 }
 
-    @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
     ${css && prismCss};
 
 
@@ -128,6 +128,7 @@ button:focus {
         padding: 20px;
         display: block;
         font-size: 12px;
+        color: #f8f8f2;
     }
 `
 
