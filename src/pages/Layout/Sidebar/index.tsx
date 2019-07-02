@@ -6,11 +6,11 @@ import { Wrap, Menu, Logo, MenuDivider } from './styled'
 function Sidebar() {
     return (
         <Wrap>
-            <Logo to="/">Mobx form constructor</Logo>
+            <Logo to="/">🚀 Mobx form constructor</Logo>
             <Menu>
                 <li>
                     <NavLink to="/" exact>
-                        Readme
+                        Introduction
                     </NavLink>
                 </li>
                 <MenuDivider>Examples:</MenuDivider>

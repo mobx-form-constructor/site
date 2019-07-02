@@ -111,14 +111,15 @@ button:focus {
     outline: none;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+
     ${css && prismCss};
 
 
     body {
-        font-family: 'Roboto', sans-serif;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         margin: 0;
         padding: 0;
+        color: #333;
     }
 
     label{
@@ -127,8 +128,9 @@ button:focus {
     code[class*="language-"]{
         padding: 20px;
         display: block;
-        font-size: 12px;
+        font-size: 13px;
         color: #f8f8f2;
+        font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     }
 `
 

@@ -5,7 +5,11 @@ import { __MOBX_FORM_CONSTRUCTOR_HOOK__ } from '@mobx-form-constructor/react/con
 import Collapsible from './Collapsible'
 import FormDebugger from './FormDebugger'
 
-function Debugger() {
+interface IProps {
+    fixed?: boolean
+}
+
+function Debugger({ fixed = true }: IProps) {
     const [forms, setForms] = useState<Form[]>([])
 
     if (!window[__MOBX_FORM_CONSTRUCTOR_HOOK__]) {
@@ -20,7 +24,7 @@ function Debugger() {
     }
 
     return (
-        <Collapsible openOnInit={forms.length > 0}>
+        <Collapsible openOnInit={forms.length > 0} fixed={fixed}>
             <FormDebugger forms={forms} />
         </Collapsible>
     )

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export const Wrap = styled.div`
     height: 100vh;
-    background: #f5f5f5;
+    background: #fafafa;
     box-shadow: -4px 0px 6px 0px #353a47;
 `
 
@@ -57,7 +57,7 @@ export const Logo = styled(Link)`
     text-align: center;
     color: #e26f6f;
     font-size: 24px;
-    padding: 20px;
+    padding: 20px 10px;
 `
 
 export const FieldWrap = styled.div`

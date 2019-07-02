@@ -1,50 +1,5 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
-    position: relative;
-    flex: 0.5;
-`
-
-export const Wrap = styled.div`
-    padding: 3rem;
-
-    @media (min-width: 1000px) {
-        width: 700px;
-    }
-
-    @media (min-width: 1500px) {
-        width: 768px;
-    }
-
-    @media (min-width: 1640px) {
-        width: 960px;
-    }
-
-    @media (min-width: 1920px) {
-        width: 1200px;
-        margin-right: 300px;
-    }
-
-    h1 {
-        font-size: 2.5rem;
-        font-weight: bold;
-        color: #34404e;
-        margin-bottom: 2rem;
-    }
-    h2 {
-        color: #34404e;
-
-        margin-bottom: 2rem;
-    }
-    a {
-        color: #e26f6f;
-    }
-`
-
-export const Block = styled.div`
-    margin: 2rem 0.5rem;
-`
-
 export const FormControl = styled.div`
     display: flex;
     flex: 0 0 300px;

@@ -3,6 +3,7 @@ import Root from '@pages'
 import Layout from '@pages/Layout'
 import SimpleForm from '@pages/Layout/Examples/Simple'
 import ExamplesLayout from '@pages/Layout/Examples'
+import IntroductionPage from '@pages/Layout/Introduction'
 
 const routes: RouteConfig[] = [
     {
@@ -13,6 +14,11 @@ const routes: RouteConfig[] = [
                 path: '/',
                 component: Layout,
                 routes: [
+                    {
+                        path: '/',
+                        component: IntroductionPage,
+                        exact: true
+                    },
                     {
                         path: '/examples',
                         component: ExamplesLayout,

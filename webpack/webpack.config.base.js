@@ -86,7 +86,7 @@ module.exports = {
             hash: true,
             template: resolve(__dirname, '../src/index.ejs'),
             templateParameters: {
-                title: 'React skeleton'
+                title: 'MobX form constructor'
             },
             filename: resolve(__dirname, isDev ? '../server/index.html' : '../public/index.html'),
             chunks: ['main'],

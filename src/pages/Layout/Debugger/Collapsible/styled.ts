@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Chip = styled.span`
     background: #2a2f3a;
@@ -7,7 +7,7 @@ export const Chip = styled.span`
     position: absolute;
     z-index: 1000;
     top: 25px;
-    left: -43px;
+    left: -42px;
     cursor: pointer;
     border-radius: 5px 5px 0 0;
     transform: rotate(0.75turn);
@@ -23,9 +23,16 @@ export const Content = styled.div<{ isOpen: boolean }>`
     transition: 0.15s ease-in-out;
 `
 
-export const Wrap = styled.div`
+export const Wrap = styled.div<{ fixed: boolean }>`
     height: 100vh;
-    position: fixed;
+    ${({ fixed }) =>
+        fixed
+            ? css`
+                  position: fixed;
+              `
+            : css`
+                  position: relative;
+              `};
     right: 0;
     top: 0;
 `

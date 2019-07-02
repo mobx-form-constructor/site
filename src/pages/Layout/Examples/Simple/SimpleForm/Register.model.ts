@@ -1,7 +1,7 @@
 import { field } from '@mobx-form-constructor/core'
 import { minLength, required } from '@utils/validators'
 
-class RegisterFormModel {
+class RegisterModel {
     @field({ validate: [required(), minLength(3)] })
     username: string
 
@@ -21,4 +21,4 @@ class RegisterFormModel {
     flavor: string[]
 }
 
-export default RegisterFormModel
+export default RegisterModel
