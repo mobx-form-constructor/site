@@ -7,17 +7,17 @@ import Sidebar from './Sidebar'
 import Debugger from './Debugger'
 
 function Layout(props: RouteConfigComponentProps) {
-    const isWide = useMedia({ minWidth: 1620 })
+  const isWide = useMedia({ minWidth: 1620 })
 
-    return (
-        <Wrap>
-            <Aside>
-                <Sidebar />
-            </Aside>
-            <Container>{renderRoutes(props.route!.routes)}</Container>
-            <Debugger fixed={!isWide} />
-        </Wrap>
-    )
+  return (
+    <Wrap>
+      <Aside>
+        <Sidebar />
+      </Aside>
+      <Container>{renderRoutes(props.route!.routes)}</Container>
+      <Debugger fixed={!isWide} />
+    </Wrap>
+  )
 }
 
 export default Layout

@@ -6,28 +6,28 @@ import Collapsible from './Collapsible'
 import FormDebugger from './FormDebugger'
 
 interface IProps {
-    fixed?: boolean
+  fixed?: boolean
 }
 
 function Debugger({ fixed = true }: IProps) {
-    const [forms, setForms] = useState<Form[]>([])
+  const [forms, setForms] = useState<Form[]>([])
 
-    if (!window[__MOBX_FORM_CONSTRUCTOR_HOOK__]) {
-        window[__MOBX_FORM_CONSTRUCTOR_HOOK__] = {
-            registerForm(form: Form) {
-                setForms([...forms, form])
-                return () => {
-                    setForms(forms.filter(f => f !== form))
-                }
-            }
+  if (!window[__MOBX_FORM_CONSTRUCTOR_HOOK__]) {
+    window[__MOBX_FORM_CONSTRUCTOR_HOOK__] = {
+      registerForm(form: Form) {
+        setForms([...forms, form])
+        return () => {
+          setForms(forms.filter(f => f !== form))
         }
+      }
     }
+  }
 
-    return (
-        <Collapsible openOnInit={forms.length > 0} fixed={fixed}>
-            <FormDebugger forms={forms} />
-        </Collapsible>
-    )
+  return (
+    <Collapsible openOnInit={forms.length > 0} fixed={fixed}>
+      <FormDebugger forms={forms} />
+    </Collapsible>
+  )
 }
 
 export default React.memo(Debugger)

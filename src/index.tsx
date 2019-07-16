@@ -7,7 +7,7 @@ import App from './components/App'
 const history = createBrowserHistory()
 
 function renderApp() {
-    render(<App history={history} />, document.getElementById('react-root'))
+  render(<App history={history} />, document.getElementById('react-root'))
 }
 
 renderApp()

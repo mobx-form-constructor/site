@@ -10,18 +10,18 @@ import routes from '../routes'
 import GlobalStyle from '../global-style'
 
 interface IProps {
-    history: History
+  history: History
 }
 
 function App({ history }: IProps) {
-    return (
-        <ThemeProvider theme={defaultTheme}>
-            <>
-                <Router history={history}>{renderRoutes(routes)}</Router>
-                <GlobalStyle />
-            </>
-        </ThemeProvider>
-    )
+  return (
+    <ThemeProvider theme={defaultTheme}>
+      <>
+        <Router history={history}>{renderRoutes(routes)}</Router>
+        <GlobalStyle />
+      </>
+    </ThemeProvider>
+  )
 }
 
 export default hot(App)
